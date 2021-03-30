@@ -1,12 +1,11 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import React from 'react';
+import WelcomeStep from '../src/components/WelcomeStep';
 
-export default function Home() {
+export default function StartPage() {
   return (
-    <div className={styles.container}>
-      <section className={styles.main}>
-        <h1>Clubhouse</h1>
-      </section>
-    </div>
+    <React.Fragment>
+      <WelcomeStep />
+    </React.Fragment>
   )
 }
+
